@@ -1,4 +1,8 @@
+// We can create react element two ways 1 is React.createElement and another way is JSX
+//JSX is we write html like structure inside javascript and it will convert to react way
+//React follows camecase where as in JS we are not using camel case
 // const div = React.createElement('div',  {}, 'Hello Rajya i am inside reactNow');
+
 // const root = ReactDom.createRoot(document.getElementById('root'));
 // root.render(div);
 
