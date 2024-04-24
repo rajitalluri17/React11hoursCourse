@@ -1,8 +1,11 @@
-// get the root
-const root = document.getElementById('root');
-// created element
-const p = document.createElement('p');
-p.innerText = "hello world from JS";
+// const div = React.createElement('div',  {}, 'Hello Rajya i am inside reactNow');
+// const root = ReactDom.createRoot(document.getElementById('root'));
+// root.render(div);
 
-//appended child in the root
-root.appendChild(p);// it doesn't have quotes for p
+const child1 = React.createElement('p', {}, "I am a child2")
+const child2 = React.createElement('p', {}, "I am a child2")
+const div = React.createElement('div', {className: 'text'}, [child1, child2])
+// const div = <div className="text">hello 2</div>
+// console.log(div)
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(div)
